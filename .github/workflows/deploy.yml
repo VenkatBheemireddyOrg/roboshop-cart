@@ -5,6 +5,12 @@ jobs:
   DEV:
     runs-on: self-hosted
     steps:
+      - name: Checkout helm repo
+        uses: actions/checkout@v4
+        with:
+          repository: VenkatBheemireddyOrg/roboshop-helm
+      - run: ls -l
+        name: Deployment
       - run: echo DEV
 
   QA:
