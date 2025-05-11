@@ -11,7 +11,6 @@ jobs:
           repository: VenkatBheemireddyOrg/roboshop-helm
       - run: ls -l
         name: Deployment
-      - run: echo DEV
 
   QA:
     runs-on: self-hosted
