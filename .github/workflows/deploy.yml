@@ -10,7 +10,6 @@ jobs:
         with:
           repository: VenkatBheemireddyOrg/roboshop-helm
       - run:
-          ls -l
           bash argocd.sh cart dev
         name: Deployment
 
