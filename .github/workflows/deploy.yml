@@ -9,9 +9,9 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: VenkatBheemireddyOrg/roboshop-helm
-      - run:
-          echo $PATH
-          bash argocd.sh cart dev
+      - run: echo $PATH
+      - run: ls -l
+      - run: bash argocd.sh cart dev
         name: Deployment
   QA:
     runs-on: self-hosted
