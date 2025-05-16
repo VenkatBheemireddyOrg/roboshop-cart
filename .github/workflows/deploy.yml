@@ -11,7 +11,7 @@ jobs:
           repository: VenkatBheemireddyOrg/roboshop-helm
       - run: echo $PATH
       - run: ls -l
-      - run: bash argocd.sh cart dev
+     # - run: bash argocd.sh cart dev
         name: Deployment
   QA:
     runs-on: self-hosted
