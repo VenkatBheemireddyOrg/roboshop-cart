@@ -1,6 +1,6 @@
 name: Cart Deployment
 run-name: ${{ github.actor }} Cart Deployment 🚀
-on: workflow_dispatch
+on: [push, workflow_dispatch]
 jobs:
   DEV:
     runs-on: self-hosted
