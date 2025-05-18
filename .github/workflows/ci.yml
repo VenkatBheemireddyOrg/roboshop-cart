@@ -1,18 +1,20 @@
-name: Catalogue CICD
-run-name: Catalogue CICD
+name: Cart CICD
+run-name: Cart CICD
 on: [push]
 jobs:
   ci:
     uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/ci.yml@main
     with:
-      component: catalogue
+      component: cart
       appType: nodejs
 
   deploy:
     needs: ci
     uses: VenkatBheemireddyOrg/github-reusable-actions/.github/workflows/deploy.yml@main
     with:
-      component: catalogue
+      component: cart
+
+
 
 
 
